@@ -15,9 +15,9 @@
     <header class="navigation">
         <div class="page-title">E-grocery</div>
         <div class="navbar">
-            <a href="/18-sep-23-adragst/" class="navbar-item">Home</a>
-            <a href="/18-sep-23-adragst/" class="navbar-item">Our Package</a>
-            <a href="/18-sep-23-adragst/" class="navbar-item">Call U</a>
+            <a href="#main-title" class="navbar-item">Home</a>
+            <a href= "#our-packages" class="navbar-item">Our Packages</a>
+            <a href="/18-sep-23-adragst/" class="navbar-item">Call Us</a>
         </div>
     </header>
     
@@ -43,11 +43,18 @@
             <div class="content-right">
                 <form class="content-form">
                     <label class="label" for="your-name">Your Name:</label>
-                    <input class="input" type="text" name="your-name" placeholder="Your first names and last name">
+                    <input class="input" required type="text" id ="your-name" placeholder="Your first names and last name">
+                    <!--/* ="your-name-input"  name=*/-->
+                    
+                    <p id="error-name"></p>
+                    
+                    
                     <label class="label" for="email-address">Email Address:</label>
-                    <input class="input" type="email" name="email-address"placeholder="Your email address@email.com">
+                    <input class="input" type="email" id ="email-address" placeholder="Your email address@email.com">
+                    <p id="error-email"></p>
+                    
                     <label class="label" for="your-interest">What are you interested in?</label>
-                    <select class="input" type="select" name="your-interest">
+                    <select class="input" type="select" id="your-interest">
                         <option value="">Meat Produce</option>
                         <option value="">Vegetables</option>
                         <option value="">Beverages</option>
@@ -58,8 +65,9 @@
             </div>
         </div>
 
-        <div class="our-features">
+        <div class="our-packages" id="our-packages">
             <div class="circle"> 1 </div>
+            <div><p>Your Name: <span id="your-name-inputted"> name </span> </p></div>
             <div class="circle"> 2 </div>
             <div class="circle"> 3 </div>
             <div class="circle"> 4 </div>
