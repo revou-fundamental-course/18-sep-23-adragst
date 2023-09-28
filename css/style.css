@@ -37,6 +37,7 @@ body{
 
 .content{
     display: flex;
+    box-sizing: border-box;
 }
 
 .content-title{
@@ -59,6 +60,7 @@ body{
 .content-slider{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
 }
@@ -68,6 +70,14 @@ body{
     width: 100%;
 }
 
+.image{
+    width: 100%;
+    display: none;
+}
+
+.active {
+    display: block;
+}
 .content-slider span{
     color:gray;
 }
@@ -80,6 +90,7 @@ body{
     background-color: rgb(214, 221, 230);
     padding: 20px;
     border-radius: 5px;
+    max-height: 600px;
 }
 
 .content-form{
@@ -121,4 +132,28 @@ body{
     font-weight: bold;
     color: rgb(129, 129, 129);
     margin: 10px;
+}
+
+.error-message{
+    color: red;
+    font-size: 0.75em;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 767px) /* klo maksimal size 767px.. bakal css nya begini*/ {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-left{
+        width: 100%;
+    }
+
+    .content-right{
+        width: 100%;
+    }
+
+    .navbar {
+        display: none !important;
+    }
 }

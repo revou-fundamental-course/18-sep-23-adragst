@@ -8,7 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <!---header/navbar-->
@@ -35,32 +34,34 @@
         <div class="content">
             <div class="content-left">
                 <div class="content-slider">
-                    <img src="asset/placeholder-image.png" alt="slider image">
+                    <img src="asset/placeholder-image.png" class="image active" alt="slider image">
+                    <img src="asset/placeholder.png" class="image"> 
                     <span>Fresh everyday</span>
                 </div>
             </div>
             
             <div class="content-right">
-                <form class="content-form">
+                <form name = "contact-form" class="content-form">
                     <label class="label" for="your-name">Your Name:</label>
-                    <input class="input" required type="text" id ="your-name" placeholder="Your first names and last name">
+                    <input class="input" required type="text" name="your-name" id ="your-name" placeholder="Your first names and last name">
                     <!--/* ="your-name-input"  name=*/-->
-                    
-                    <p id="error-name"></p>
+                    <p id="error-name" class = "error-message"></p>
                     
                     
                     <label class="label" for="email-address">Email Address:</label>
-                    <input class="input" type="email" id ="email-address" placeholder="Your email address@email.com">
-                    <p id="error-email"></p>
+                    <input class="input" type="email" name="your-email" id ="your-email" placeholder="Your email address@email.com">
+                    <p id="error-email" class = "error-message"></p>
                     
                     <label class="label" for="your-interest">What are you interested in?</label>
-                    <select class="input" type="select" id="your-interest">
-                        <option value="">Meat Produce</option>
-                        <option value="">Vegetables</option>
-                        <option value="">Beverages</option>
-                        <option value="">Snacks</option>
+                    <select class="input" type="select" name= "your-interest" id="your-interest">
+                        <option value="">--select interest--</option>
+                        <option value="meat-produce">Meat Produce</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="beverages">Beverages</option>
+                        <option value="snacks">Snacks</option>
                     </select>
-                    <button id="submit-form" type="submit" class="button">Submit</button>
+                    <p id="error-interest" class = "error-message"></p>
+                    <button id="submit-form" type="submit" class="button" value="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -79,5 +80,6 @@
     <footer>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
