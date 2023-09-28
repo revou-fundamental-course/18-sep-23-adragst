@@ -7,8 +7,9 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 3px solid grey;
-    padding-bottom: 15px;
+    padding:0px 20px 15px 20px;
     font-family: Karla;
+
 }
 
 .navbar{
@@ -31,7 +32,6 @@
 }
 
 body{
-    padding:0px 20px 0px 20px;
     font-family: Karla;
 }
 
@@ -39,6 +39,7 @@ body{
     display: flex;
     box-sizing: border-box;
     overflow-y: hidden;
+    padding:0px 20px 0px 20px;
 }
 
 .content-title{
@@ -87,6 +88,34 @@ body{
     color:gray;
 }
 
+.testimony {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.testimonial p {
+    margin: 0px;
+}
+
+.testimony-name {
+    box-sizing: border-box;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.testimony-job {
+    box-sizing: border-box;
+    font-size: 0.8em;
+}
+
 .content-right{
     display: flex;
     flex-direction: column; 
@@ -101,8 +130,17 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-
 }
+
+.content-form >h2{
+    font-size: 1.5em;
+}
+
+.content-form >p {
+    color:rgb(47, 47, 47);
+}
+
+
 
 .label{
     padding-top: 20px;
@@ -127,16 +165,17 @@ body{
     background-color: cornflowerblue;
 }
 
-.circle{
+.circle {
     display: flex;
     justify-content: center;
-    border-radius: 50%;
+    align-items: center;
+    border-radius: 100%;
     background-color: rgb(237, 237, 237);
-    width: 1.1em;
+    width: 1.5em;
+    height: 1.5em;
     padding: 5px;
     font-weight: bold;
     color: rgb(129, 129, 129);
-    margin: 10px;
 }
 
 .error-message{
@@ -145,6 +184,107 @@ body{
     margin-top: 0px;
 }
 
+.features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.features span {
+    font-weight: 800;
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+
+.the-feature {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin: 20px 5px;
+}
+
+.the-feature p{
+    flex-flow: row;
+    color: rgb(185, 185, 185);
+}
+.our-packages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(214, 221, 230);
+    height: 150px;
+}
+
+.packages {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-bottom: 3px solid rgb(197, 197, 197);
+    padding: 15px 0px;
+}
+
+.the-package {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.package-icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 50%;
+    background-color: rgb(237, 237, 237);
+    width: 1.1em;
+    height: 1.1em;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(129, 129, 129);
+    margin: 10px;
+
+}
+
+.package-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    margin-left: 5px;
+}
+
+.package-name > span {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#package-description {
+    margin-top: 5px;
+    color: rgb(185, 185, 185);
+    font-size: 0.9em;
+}
+
+.call-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid rgb(185,185,185);
+    padding-bottom: 15px;
+}
+
+.call-action p {
+    color: rgb(185, 185, 185);
+    margin: 20px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 767px) /* klo maksimal size 767px.. bakal css nya begini*/ {
     .content {
         display: flex;
