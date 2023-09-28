@@ -38,6 +38,7 @@ body{
 .content{
     display: flex;
     box-sizing: border-box;
+    overflow-y: hidden;
 }
 
 .content-title{
@@ -63,11 +64,12 @@ body{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+
 }
 
 .content-slider img{
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
 }
 
 .image{
@@ -79,6 +81,9 @@ body{
     display: block;
 }
 .content-slider span{
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
     color:gray;
 }
 
@@ -90,12 +95,12 @@ body{
     background-color: rgb(214, 221, 230);
     padding: 20px;
     border-radius: 5px;
-    max-height: 600px;
 }
 
 .content-form{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 
 }
 
@@ -144,9 +149,11 @@ body{
     .content {
         display: flex;
         flex-direction: column;
+    
     }
     .content-left{
         width: 100%;
+        margin-bottom: 40px;
     }
 
     .content-right{
